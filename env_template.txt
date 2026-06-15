@@ -1,0 +1,13 @@
+PROJECT_ROOT="D:\Heart Disease prediction\Heart-prediction-system"
+DATASET_DIR = DataSet
+DATASET_NAME = heart.csv
+MODEL_DIR=model_dir
+MODEL_NAME=heart_pipeline_trained.joblib
+LOG_DIR=Logs
+LOG_NAME=app.log
+TARGET_COL = "target"
+TEST_SIZE=0.15
+RANDOM_STATE=42
+DATASET_NAME = heart.csv
+
+API_URL = "http://127.0.0.1:8000/predict-heart-disease"

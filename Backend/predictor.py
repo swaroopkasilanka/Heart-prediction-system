@@ -10,8 +10,9 @@ from joblib import load
 # load .env content to env vars
 load_dotenv()
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-PROJECT_ROOT = Path(os.getenv("PROJECT_ROOT", ".")).resolve()
+PROJECT_ROOT = Path(os.path.dirname(BASE_DIR))
 # os.getenv may return None; provide safe defaults or raise clear errors
 DATASET_DIR = os.getenv("DATASET_DIR") or ""
 DATASET_NAME = os.getenv("DATASET_NAME") or ""
