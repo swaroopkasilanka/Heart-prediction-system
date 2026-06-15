@@ -19,11 +19,11 @@ load_dotenv()
 API_URL = os.getenv("API_URL")
 
 st.set_page_config(
-    page_title="MedBuddy.ML",
+    page_title="Heart-Disease-prediction Model",
     page_icon="⚕️",
     layout="centered"
 )
-st.title("⚕️ MedBuddy.ML")
+st.title("⚕️ Heart Disease Prediction")
 st.write("Heart Disease Risk Predictor")
 
 st.subheader("Enter patient details and click **Predict**")
